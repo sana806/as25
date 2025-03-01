@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porduct preview card</title>
+</head>
+<style>
+    .main-img{
+        display: block;
+        margin: 40px auto;
+        height: 500px;
+        width: 410px;
+        border: 1px solid black;
+        border-radius: 20px;
+       box-shadow: 2px 2px 5px 0px;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .mob{
+     height: 100px;  
+     margin: 20px;
+     width: 100px;
+     border: 1px solid black;
+     border-radius: 20px;
+    }
+</style>
+<body>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00gbwg6oQgrpcfyATvhhnCTGzHX5gkSyebA&s" class="main-img" id="main-img">
+  <div class="img-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGzRI33v9tOtNVLsz6lUozBS7GPFmywblVQ&s" class="mob" onclick="watch(1)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00gbwg6oQgrpcfyATvhhnCTGzHX5gkSyebA&s" class="mob" onclick="watch(2)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxBHY6FhABfQR9DYAnpQvBHHiplXsc7Ym4Q&s"class="mob" onclick="watch(3)">
+    <img src="https://i.ytimg.com/vi/xyjK39pjJwE/maxresdefault.jpg " class="mob" onclick="watch(4)">
+  </div>
+  <script>
+    function watch(num){
+    const mainimg=document.getElementById("main-img");
+    if(num==1){
+        mainimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00gbwg6oQgrpcfyATvhhnCTGzHX5gkSyebA&s" ;
+    }else if (num==2){
+        mainimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGzRI33v9tOtNVLsz6lUozBS7GPFmywblVQ&s";
+    }else if (num==3){
+        mainimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxBHY6FhABfQR9DYAnpQvBHHiplXsc7Ym4Q&s";
+    }else if (num==4){
+        mainimg.src="https://i.ytimg.com/vi/xyjK39pjJwE/maxresdefault.jpg ";
+    }
+}
+  </script>
+</body>
+</html>
